@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WoodyArt — деревянный декор для стен</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">WoodyArt</div>
+<nav class="nav">
+<a href="catalog.html">Каталог</a>
+<a href="about.html">О нас</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+<a href="#cart" class="cart-btn">Корзина <span class="cart-count">0</span></a>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Деревянный декор ручной работы</h1>
+<p>Украсьте стены своего дома уникальными изделиями из натурального дерева</p>
+<a href="catalog.html" class="btn">Посмотреть коллекцию</a>
+</div>
+</section>
+
+<section class="catalog">
+<div class="container">
+<h2 class="section-title">Популярные изделия</h2>
+<div class="products" id="products-grid"></div>
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+<h2 class="section-title">О нас</h2>
+<p>Мы создаём декоративные изделия из массива дуба, ясеня и ореха. Каждый предмет шлифуется и покрывается экологичным маслом вручную.</p>
+</div>
+</section>
+
+<section class="contacts">
+<div class="container">
+<h2 class="section-title">Контакты</h2>
+<p>Email: hello@woodyart.example</p>
+<p>Телефон: +7 (999) 000-00-00</p>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="logo">WoodyArt</div>
+<p>© 2026 WoodyArt. Все права защищены.</p>
+</div>
+</footer>
+
+<section class="checkout-modal" id="checkout" style="display:none;">
+<div class="container">
+<h2>Оформление заказа</h2>
+<form id="checkout-form">
+<label>Имя</label>
+<input type="text" name="name" required placeholder="Иван Иванов">
+<label>Email</label>
+<input type="email" name="email" required placeholder="ivan@mail.ru">
+<label>Телефон</label>
+<input type="tel" name="phone" required placeholder="+7 999 000-00-00">
+<label>Адрес доставки</label>
+<textarea name="address" required placeholder="г. Москва, ул. Примерная, д. 1"></textarea>
+<button type="submit" class="btn" id="checkout-submit">Оплатить через RollyPay</button>
+</form>
+<div id="checkout-message"></div>
+<button class="btn" id="checkout-close">Закрыть</button>
+</div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

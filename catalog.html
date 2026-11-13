@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог — WoodyArt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">WoodyArt</div>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="about.html">О нас</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+<a href="#" class="cart-btn">Корзина <span class="cart-count">0</span></a>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Каталог деревянного декора</h1>
+<p>Выберите произведение, которое украсит ваш дом</p>
+</div>
+</section>
+
+<section class="catalog">
+<div class="container">
+<h2 class="section-title">Каталог</h2>
+<div class="products" id="products-grid"></div>
+<div class="filter-bar" style="margin: 30px 0; text-align: center;">
+<input type="text" id="filter-search" placeholder="Поиск по названию..." style="padding: 8px 16px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;">
+</div>
+</div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
